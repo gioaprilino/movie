@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\MovieController;
 use App\Http\Controllers\Api\PopularMovieController;
+use App\Http\Controllers\MovieController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,5 +24,4 @@ Route::get('/movies/edit/{id}', [MovieController::class, 'form_edit']);
 
 Route::post('movies/{movie}/update', [MovieController::class, 'update'])->name('movies.update');
 Route::get('movies/delete/{id}', [MovieController::class, 'delete'])->name('movies.delete');
-Route::get('/movies/api', [PopularMovieController::class,'getMovies']);
-
+Route::get('/movies/api', [PopularMovieController::class, 'getMovies']);
