@@ -12,6 +12,7 @@ class Movie extends Model
     protected $fillable = ['id', 'judul', 'sinopsis', 'category_id', 'tahun', 'pemain', 'foto_sampul'];
 
     public $incrementing = false;
+
     protected $keyType = 'string';
 
     public function category()
