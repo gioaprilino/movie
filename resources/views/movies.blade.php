@@ -58,7 +58,7 @@
 
 <body>
     <div class="container">
-        <h1>Premier League movies</h1>
+        <h1>Popular movies based on IMDB</h1>
         <!-- Menampilkan error jika ada masalah -->
         @if (isset($data['error']))
             <div class="error">
